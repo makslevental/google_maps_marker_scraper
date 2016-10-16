@@ -5,13 +5,15 @@ requires selenium 2.53.6 and PyVirtualDisplay 0.2.1 (in order to run headless).
 
 uses https://github.com/inaz2/proxy2
 
+## instructions
+
 1. run setup_https_intercept.sh.
 2. sudo apt-get install xvfb.
 3. et voila.
 
 tested with chrome. should work with firefox 30 but does not work with phantomjs.
 
-#how does it work
+## how does it work
 
 create global vars 
 
@@ -85,7 +87,7 @@ for (var i = 0; i<window.maxs_markers.length;i++) {
 
 now just inject source into maps.google.com/maps/api/js whenever it's loaded by the page you want to scrape (hence the proxy).
 
-# faq
+## faq
 
 1. **how did you find the constructor and setter**? the constructor is easy because the it's part of the api, so in maps.google.com/maps/api/js there's an assignment `Marker:_.ue`. to find the setter i used a debugger.
 2. **why regex instead of serving a static local file?**
