@@ -75,11 +75,11 @@ def scrape(url):
     display = Display(visible=0, size=(800, 600))
     display.start()
     try:
-        chrome_option = webdriver.ChromeOptions()
-        chrome_option.add_argument("--proxy-server=127.0.0.1:{}".format(config.PROXY_PORT))
-        capabilities = DesiredCapabilities.CHROME
-        capabilities['loggingPrefs'] = {'browser': 'ALL'}
-        driver = webdriver.Chrome(chrome_options=chrome_option, desired_capabilities=capabilities)
+        # chrome_option = webdriver.ChromeOptions()
+        # chrome_option.add_argument("--proxy-server=127.0.0.1:{}".format(config.PROXY_PORT))
+        # capabilities = DesiredCapabilities.CHROME
+        # capabilities['loggingPrefs'] = {'browser': 'ALL'}
+        # driver = webdriver.Chrome(chrome_options=chrome_option, desired_capabilities=capabilities)
 
         proxy = Proxy({
             'proxyType': ProxyType.MANUAL,
