@@ -89,7 +89,7 @@ now just inject this source into maps.google.com/maps/api/js whenever it's loade
 
 ## faq
 
-1. **how did you find the constructor and setter**? the constructor is easy because the it's part of the api, so in maps.google.com/maps/api/js there's an assignment `Marker:_.ue`. to find the setter i used a debugger.
+1. **how did you find the constructor and setter**? the constructor is easy because it's part of the api, so in maps.google.com/maps/api/js there's an assignment `Marker:_.ue`. to find the setter i used a debugger.
 2. **why regex instead of serving a static local file?**
 google re-obfuscates each time it releases a new version so the identifiers change.
 3. **why serve over ssl?** all sorts of hsts non-sense.
