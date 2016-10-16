@@ -85,7 +85,7 @@ for (var i = 0; i<window.maxs_markers.length;i++) {
 }
 ```
 
-now just inject source into maps.google.com/maps/api/js whenever it's loaded by the page you want to scrape (hence the proxy).
+now just inject this source into maps.google.com/maps/api/js whenever it's loaded by the page you want to scrape (hence the proxy).
 
 ## faq
 
